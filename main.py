@@ -41,7 +41,7 @@ async def process_youtube_link(update: Update, context: ContextTypes.DEFAULT_TYP
     )
 
     try:
-        yt = YouTube(url, use_oauth=True, allow_oauth_cache=True)
+        yt = YouTube(url, client='WEB')
         # OR, as the error suggests, use the 'po' token, though use_oauth is often the standard fix:
         # yt = YouTube(url, use_po_token=True)
         
