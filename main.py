@@ -90,7 +90,7 @@ async def process_youtube_link(update: Update, context: ContextTypes.DEFAULT_TYP
     except Exception as e:
         print(f"Error processing {url}: {e}")
         await context.bot.edit_message_text(
-            text=e,
+            text=f"{e}",
             chat_id=chat_id,
             message_id=processing_message.message_id,
             parse_mode='Markdown'
