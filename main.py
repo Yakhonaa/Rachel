@@ -7,7 +7,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # --- Configuration ---
 # IMPORTANT: Replace with your actual bot token from @BotFather
-BOT_TOKEN = "7328786636:AAFOkzJmgmfMCI11gmB9-6mvMQ1jD5tdfkc"
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 # Enable logging for debugging
 logging.basicConfig(
